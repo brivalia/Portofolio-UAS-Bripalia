@@ -1,0 +1,181 @@
+/* Reset dasar */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1; 
+  color: #2c3e50; 
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(44, 62, 80, 0.9) !important; 
+  padding: 12px 0;
+}
+.navbar-brand img {
+  width: 50px;
+}
+.navbar-nav .nav-link {
+  color: #ecf0f1 !important;
+  font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+  color: #3498db !important; 
+}
+
+/* Home Section */
+#home {
+  background: linear-gradient(to right, #34495e, #2c3e50); 
+  color: white;
+  text-align: center;
+}
+#home h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+#home p {
+  font-size: 1.3rem;
+}
+.btn-warning {
+  background-color: #f39c12;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.btn-warning:hover {
+  background-color: #e67e22;
+}
+
+/* About Section */
+#about img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border: 5px solid #f39c12;
+  max-width: 100%; 
+  height: auto; 
+}
+#about h3 {
+  color: #34495e;
+}
+
+/* Skills Section */
+#skills .progress {
+  height: 25px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress-bar {
+  font-weight: bold;
+  line-height: 25px;
+  background-color: #3498db; 
+}
+
+/* Projects Section */
+#projects .card {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#projects .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+}
+#projects .carousel-control-prev-icon,
+#projects .carousel-control-next-icon {
+  background-color: #2c3e50;
+  border-radius: 50%;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #ecf0f1;
+}
+#contact input,
+#contact textarea {
+  border: 2px solid #2980b9;
+  border-radius: 5px;
+}
+#contact button {
+  background-color: #2980b9;
+  color: white;
+  font-weight: bold;
+}
+#contact button:hover {
+  background-color: #1abc9c;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 0;
+}
+footer a {
+  color: white;
+  margin: 0 10px;
+}
+footer a:hover {
+  color: #f39c12;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  #home h1 {
+    font-size: 2.8rem; 
+  }
+  #home p {
+    font-size: 1.1rem; 
+  }
+  #about img {
+    width: 200px; 
+    height: 200px;
+  }
+  .btn-warning {
+    font-size: 1.1rem; 
+  }
+}
+br
+footer {
+  display: flex;
+  justify-content: center; /* Memusatkan konten secara horizontal */
+  align-items: center; /* Memusatkan konten secara vertikal */
+  flex-direction: column; /* Menyusun elemen secara vertikal */
+  height: 200px; /* Mengatur tinggi footer */
+  background-color: #343a40; /* Warna latar belakang footer */
+  color: white;
+  padding: 20px;
+  text-align: center; /* Memastikan semua teks berada di tengah */
+}
+
+.footer-content {
+  width: 100%;
+}
+
+footer p, footer .social {
+  margin: 5px 0;
+}
+
+footer .social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+footer .social a:hover {
+  color: #f8b400;
+}
+
+footer .end {
+  margin-top: 10px;
+}
